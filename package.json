@@ -1,0 +1,29 @@
+{
+  "name": "myport",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "test": "vitest",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "@tailwindcss/vite": "^4.1.13",
+    "tailgrids": "^2.3.0",
+    "tailwindcss": "^4.1.13",
+    "vue": "^3.5.18",
+    "vue-router": "^4.5.1",
+    "vue-typewriter-effect": "^1.0.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.1",
+    "@vue/test-utils": "^2.4.6",
+    "jsdom": "^27.0.0",
+    "vite": "^7.1.2",
+    "vitest": "^3.2.4",
+    "vue-test-utils": "^0.5.0"
+  }
+}
