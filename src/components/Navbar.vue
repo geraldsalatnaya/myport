@@ -70,7 +70,7 @@ const handleCheckboxChange = () => {
                        class="h-5 transition rounded-full  shadow-inner  bg-indigo-200 dark:bg-slate-950 w-14 "
                      ></div>
                        <div
-                         :class="{ 'translate-x-full !bg-primary !text-indigo-300' :isDarkMode}"
+                         :class="{ 'translate-x-full ' :!isDarkMode}"
                          class="absolute left-0 flex items-center justify-center transition bg-white rounded-full shadow-switch-1 -top-1 h-7 w-7 dark:bg-indigo-600 text-indigo-400"
                        >
                          <span class="w-4 h-4 border border-current rounded-full bg-inherit active"></span>
