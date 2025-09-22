@@ -7,7 +7,20 @@ import About from './components/About.vue'
 import Project from './components/Project.vue'
 import Contact from './components/Contact.vue'
 
+
+ const theme = localStorage.getItem('theme');
+  if(!theme){
+    document.documentElement.classList.add('dark');
+    localStorage.setItem('theme', 'dark')
+  } else if (theme === 'dark'){
+    document.documentElement.classList.add('dark')
+  } else if(theme === 'light'){
+    document.documentElement.classList.remove('dark')
+  } 
+
 createApp(App).mount('#app')
+
+
 
 const routes = [
     {
@@ -63,14 +76,6 @@ router.beforeEach((to, from, next) => {
 
 });
 
- const theme = localStorage.getItem('theme');
-  if(!theme){
-    document.documentElement.classList.add('dark');
-    localStorage.setItem('theme', 'dark')
-  } else if (theme === 'dark'){
-    document.documentElement.classList.add('dark')
-  } else if(theme === 'light'){
-    document.documentElement.classList.remove('dark')
-  } 
+
 
 
